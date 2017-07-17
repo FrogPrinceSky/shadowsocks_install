@@ -199,7 +199,7 @@ function install_ss(){
     # Install ShadowsocksR
     cd $cur_dir
     unzip -q manyuser.zip
-    mv shadowsocks-manyuser/shadowsocks /usr/local/
+    mv shadowsocksr-manyuser/shadowsocks /usr/local/
     if [ -f /usr/local/shadowsocks/server.py ]; then
         chmod +x /etc/init.d/shadowsocks
         # Add run on system start up
@@ -240,7 +240,7 @@ function install_ss(){
 function install_cleanup(){
     cd $cur_dir
     rm -f manyuser.zip
-    rm -rf shadowsocks-manyuser
+    rm -rf shadowsocksr-manyuser
     rm -f libsodium-1.0.8.tar.gz
     rm -rf libsodium-1.0.8
 }
